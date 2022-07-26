@@ -59,7 +59,24 @@ class AppTheme {
       // ElevatedButton
       elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-              primary: primary, shape: const StadiumBorder(), elevation: 0))
+              primary: primary, shape: const StadiumBorder(), elevation: 0)),
+      inputDecorationTheme: InputDecorationTheme(
+        floatingLabelStyle: TextStyle(color: primary),
+        enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: primary),
+            borderRadius: const BorderRadius.only(
+                bottomLeft: Radius.circular(10),
+                topRight: Radius.circular(10))),
+        focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: primary),
+            borderRadius: const BorderRadius.only(
+                bottomLeft: Radius.circular(10),
+                topRight: Radius.circular(10))),
+        border: const OutlineInputBorder(
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(10),
+                topRight: Radius.circular(10))),
+      )
 
       //Linea final
       );
