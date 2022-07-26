@@ -10,8 +10,7 @@ class AlertScreen extends StatelessWidget {
     showDialog(
         context: context,
         builder: (context) => AlertDialog(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
               elevation: 5,
               title: const Text('Alerta'),
               content: Column(
@@ -31,8 +30,7 @@ class AlertScreen extends StatelessWidget {
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    child: const Text('Cancelar',
-                        style: TextStyle(color: Colors.red))),
+                    child: const Text('Cancelar', style: TextStyle(color: Colors.red))),
                 TextButton(
                     onPressed: () {
                       Navigator.pop(context);
@@ -90,11 +88,8 @@ class AlertScreen extends StatelessWidget {
       ),
       body: Center(
           child: ElevatedButton(
-        onPressed: () => !Platform.isAndroid
-            ? displayDialogAndroid(context)
-            : displayDialogIOS(context),
-        style: ElevatedButton.styleFrom(
-            shape: const StadiumBorder(), elevation: 0),
+        onPressed: () => !Platform.isAndroid ? displayDialogAndroid(context) : displayDialogIOS(context),
+        style: ElevatedButton.styleFrom(shape: const StadiumBorder(), elevation: 0),
         child: const Text('Mostrar alerta'),
       )),
     );

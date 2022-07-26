@@ -35,8 +35,7 @@ class AppTheme {
       ),
 
       // TextButton theme
-      textButtonTheme:
-          TextButtonThemeData(style: TextButton.styleFrom(primary: primary)),
+      textButtonTheme: TextButtonThemeData(style: TextButton.styleFrom(primary: primary)),
 
       // ListTile theme
       listTileTheme: ListTileThemeData(
@@ -53,29 +52,15 @@ class AppTheme {
       ),
 
       // FloatingActionButton
-      floatingActionButtonTheme:
-          FloatingActionButtonThemeData(backgroundColor: primary, elevation: 0),
+      floatingActionButtonTheme: FloatingActionButtonThemeData(backgroundColor: primary, elevation: 0),
 
       // ElevatedButton
-      elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(
-              primary: primary, shape: const StadiumBorder(), elevation: 0)),
+      elevatedButtonTheme: ElevatedButtonThemeData(style: ElevatedButton.styleFrom(primary: primary, shape: const StadiumBorder(), elevation: 0)),
       inputDecorationTheme: InputDecorationTheme(
         floatingLabelStyle: TextStyle(color: primary),
-        enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: primary),
-            borderRadius: const BorderRadius.only(
-                bottomLeft: Radius.circular(10),
-                topRight: Radius.circular(10))),
-        focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: primary),
-            borderRadius: const BorderRadius.only(
-                bottomLeft: Radius.circular(10),
-                topRight: Radius.circular(10))),
-        border: const OutlineInputBorder(
-            borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(10),
-                topRight: Radius.circular(10))),
+        enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: primary), borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(10), topRight: Radius.circular(10))),
+        focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: primary), borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(10), topRight: Radius.circular(10))),
+        border: const OutlineInputBorder(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(10), topRight: Radius.circular(10))),
       )
 
       //Linea final

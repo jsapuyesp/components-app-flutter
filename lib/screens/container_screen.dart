@@ -21,10 +21,8 @@ class _ContainerScreenState extends State<ContainerScreen> {
     setState(() {
       _width = random.nextInt(200).toDouble() + 20;
       _height = random.nextInt(200).toDouble() + 20;
-      _color = Color.fromRGBO(
-          random.nextInt(255), random.nextInt(255), random.nextInt(255), 1);
-      _borderRadius =
-          BorderRadius.circular(random.nextInt(100).toDouble() + 10);
+      _color = Color.fromRGBO(random.nextInt(255), random.nextInt(255), random.nextInt(255), 1);
+      _borderRadius = BorderRadius.circular(random.nextInt(100).toDouble() + 10);
     });
   }
 
