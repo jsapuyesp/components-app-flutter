@@ -3,27 +3,30 @@ import 'package:flutter/material.dart';
 class AppTheme {
   static final Color primary = Colors.deepPurple.shade200;
   static const double elevationMin = 10;
+  static const Color white = Colors.white;
+  static const Color errorColor = Colors.red;
 
   static final ThemeData lightTheme = ThemeData.light().copyWith(
       // Color primario de la aplicación
       primaryColor: primary,
+      errorColor: errorColor,
 
       // Scheme colors
       colorScheme: ColorScheme(
         primary: primary, // focus
-        onPrimary: Colors.white,
+        onPrimary: white, //AppBar Title color
 
         background: primary,
-        onBackground: Colors.white,
+        onBackground: white,
 
         secondary: primary, //float action button
         onSecondary: Colors.white,
 
-        error: Colors.white,
-        onError: Colors.white,
+        error: errorColor,
+        onError: errorColor,
 
-        surface: Colors.white, // AppBar
-        onSurface: Colors.white, //icons, inputs
+        surface: primary, // AppBar
+        onSurface: Colors.deepPurple.shade400, //icons, inputs
 
         brightness: Brightness.light,
       ),

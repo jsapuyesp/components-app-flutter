@@ -20,19 +20,16 @@ class AppRoutes {
     MenuOption(route: 'container', name: 'Container Screen', screen: const ContainerScreen(), icon: Icons.computer),
     MenuOption(route: 'input', name: 'Input Screen', screen: const InputScreen(), icon: Icons.input),
     MenuOption(route: 'slider', name: 'Slider Screen', screen: const SliderScreen(), icon: Icons.soap_outlined),
+    MenuOption(route: 'listViewBuilder', name: 'ListView Builder Screen', screen: const ListViewBuilderScreen(), icon: Icons.build),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
     Map<String, Widget Function(BuildContext)> appRoutes = {};
 
-    appRoutes.addAll({
-      'home': (BuildContext context) => const HomeScreen()
-    });
+    appRoutes.addAll({'home': (BuildContext context) => const HomeScreen()});
 
     for (final option in menuOptions) {
-      appRoutes.addAll({
-        option.route: (BuildContext context) => option.screen
-      });
+      appRoutes.addAll({option.route: (BuildContext context) => option.screen});
     }
 
     return appRoutes;
